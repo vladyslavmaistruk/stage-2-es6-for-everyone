@@ -14,7 +14,7 @@ class FighterService {
 
   async getFighterDetails(_id) {
     // implement this method
-    // endpoint - `details/fighters/${_id}.json`;
+    // endpoint - `details/fighter/${_id}.json`;
   }
 }
 
