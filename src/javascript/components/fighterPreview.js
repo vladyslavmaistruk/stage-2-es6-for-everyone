@@ -7,7 +7,7 @@ export function createFighterPreview(fighter, position) {
     className: `fighter-preview___root ${positionClassName}`,
   });
 
-  // todo: show fighter info
+  // todo: show fighter info (image, name, health, etc.)
 
   return fighterElement;
 }
