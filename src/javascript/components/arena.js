@@ -25,19 +25,19 @@ function createArena(selectedFighters) {
 function createHealthIndicators(leftFighter, rightFighter) {
   const healthIndicators = createElement({ tagName: 'div', className: 'arena___fight-status' });
   const versusSign = createElement({ tagName: 'div', className: 'arena___versus-sign' });
-  const leftFighterIndicator = createHealthIndicator(leftFighter);
-  const rightFighterIndicator = createHealthIndicator(rightFighter);
+  const leftFighterIndicator = createHealthIndicator(leftFighter, 'left');
+  const rightFighterIndicator = createHealthIndicator(rightFighter, 'right');
 
   healthIndicators.append(leftFighterIndicator, versusSign, rightFighterIndicator);
   return healthIndicators;
 }
 
-function createHealthIndicator(fighter) {
-  const { name, _id } = fighter;
+function createHealthIndicator(fighter, position) {
+  const { name } = fighter;
   const container = createElement({ tagName: 'div', className: 'arena___fighter-indicator' });
   const fighterName = createElement({ tagName: 'span', className: 'arena___fighter-name' });
   const indicator = createElement({ tagName: 'div', className: 'arena___health-indicator' });
-  const bar = createElement({ tagName: 'div', className: 'arena___health-bar', attributes: { id: `fighter-${_id}` }});
+  const bar = createElement({ tagName: 'div', className: 'arena___health-bar', attributes: { id: `${position}-fighter-indicator` }});
 
   fighterName.innerText = name;
   indicator.append(bar);
