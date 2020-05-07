@@ -29,7 +29,8 @@ async function fakeCallApi(endpoint) {
 
 function getFighterById(endpoint) {
   const start = endpoint.lastIndexOf('/');
-  const id = endpoint.substring(start + 1);
+  const end = endpoint.lastIndexOf('.json');
+  const id = endpoint.substring(start + 1, end);
 
   return fightersDetails.find((it) => it._id === id);
 }
