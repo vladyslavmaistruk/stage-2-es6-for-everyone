@@ -20,7 +20,7 @@ async function callApi(endpoint, method) {
 }
 
 async function fakeCallApi(endpoint) {
-  const response = endpoint === 'fighters' ? fighters : getFighterById(endpoint);
+  const response = endpoint === 'fighters.json' ? fighters : getFighterById(endpoint);
 
   return new Promise((resolve, reject) => {
     setTimeout(() => (response ? resolve(response) : reject(Error('Failed to load'))), 500);
