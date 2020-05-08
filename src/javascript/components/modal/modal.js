@@ -35,7 +35,7 @@ function createHeader(title, onClose) {
     onClose();
   }
   closeButton.addEventListener('click', close);
-  headerElement.append(title, closeButton);
+  headerElement.append(titleElement, closeButton);
   
   return headerElement;
 }
