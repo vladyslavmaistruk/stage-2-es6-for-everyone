@@ -42,5 +42,5 @@ function createHeader(title, onClose) {
 
 function hideModal() {
   const modal = document.getElementsByClassName('modal-layer')[0];
-  modal?.remove();
+   modal?.remove();
 }

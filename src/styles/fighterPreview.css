@@ -6,8 +6,46 @@
 
 .fighter-preview___right {
   align-items: flex-end;
+  
+  
+}
+.fighter-preview___right img {
+  transform: scaleX(-1);
 }
 
 .fighter-preview___left {
   align-items: flex-start;
+  text-align: center;
+
+}
+.fighter-preview___left,
+.fighter-preview___right {
+  display: block;
+}
+
+.fighter-preview___left img,
+.fighter-preview___right img {
+  display: block;
+  margin: 0 auto;
+  
+}
+.figher-preview__image {
+  width: 250px;
+  height: 300px;
+}
+.fighter-preview__element {
+  color: #fff;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  text-shadow: 1px 1px 3px black;
+}
+.fighter-preview__element span {
+  display: inline-block;
+  float: right;
+}
+.fighter-preview__name {
+  text-align: center;
+  padding: 10px;
 }

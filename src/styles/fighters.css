@@ -26,9 +26,11 @@
   background: #ffdfa7;
   margin: 10px;
   border: 5px solid #ca9650;
+  transition: all .2s ease-in-out;
 }
 
 .fighters___fighter:hover {
   background: #cbe4f8;
   border: 5px solid #267abf;
+  transition: all .2s ease-in-out;
 }
