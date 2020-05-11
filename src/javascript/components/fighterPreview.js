@@ -42,13 +42,8 @@ export function createFighterPreview(fighter, position) {
   });
   defenseElement.innerHTML = `Defense: <span>${fighter.defense}</span>`;
 
-
-
-
-
-
-
   fighterElement.append(nameElement, imageElement,haelthElement, attackElement, defenseElement);
+  
   return fighterElement;
 }
 

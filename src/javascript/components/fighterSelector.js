@@ -1,5 +1,5 @@
 import { createElement } from '../helpers/domHelper';
-import { renderArena } from './arena';
+import { renderArena } from "./arena";
 import versusImg from '../../../resources/versus.png';
 import { createFighterPreview } from './fighterPreview';
 /*Add import of fighterService instance*/
@@ -22,8 +22,7 @@ export function createFightersSelector() {
 const fighterDetailsMap = new Map();
 
 export async function getFighterInfo(fighterId) {
-  console.log(`fighterId = ${fighterId}`);
-  console.log(`fighterService.getFighterDetails(fighterId) = ${fighterService.getFighterDetails(fighterId)}`);
+  
   // get fighter info from fighterDetailsMap or from service and write it to fighterDetailsMap
   const fighterDetailed = await fighterService.getFighterDetails(fighterId);
   if(!fighterDetailsMap.has( fighterId )) {
